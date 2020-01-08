@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unpas.chatak.transaksi_page.SignUpActivity"
+    android:orientation="vertical">
+    <!--parent scroll-->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--halaman parent, menu bar -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<!--header-->
+            <include layout="@layout/activity_login_header"/>
+<!--content-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    app:srcCompat="@drawable/textlogo" />
+                <!--Form Sign Up-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+                    //phone verification
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtInfoReg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Verifikasi nomor telepon terlebih dahulu sebelum mendaftarkan data diri."
+                            android:textAlignment="center"
+                            android:textColor="@color/hitam_chatak"
+                            android:textSize="@dimen/text_size_12sp" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/editTextNoHandphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:digits="@string/allowed_input_char_phone"
+                        android:ems="10"
+                        android:hint="Nomor telp. Gunakan +62"
+                        android:inputType="phone"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="15dp" />
+                    <EditText
+                        android:id="@+id/editTextVerificationCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:digits="@string/allowed_input_char_phone"
+                        android:ems="10"
+                        android:hint="kode verifikasi"
+                        android:inputType="phone"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="15dp" />
+
+                    <LinearLayout
+                        android:id="@+id/llBtnSendVerification"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnResendCodeVerf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_btn"
+                            android:text="Kirim ulang"
+                            android:textColor="@color/colorPrimary" />
+
+                        <Button
+                            android:id="@+id/btnCheckCodeVerf"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_btn"
+                            android:text="Cek kode"
+                            android:textColor="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnSendCodeVerification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rounded_btn"
+                        android:text="Kirim kode verifikasi"
+                        android:textColor="@color/colorPrimary" />
+                    //end of phoneVerification
+                    <EditText
+                        android:id="@+id/editTextNamaLengkap"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:digits="@string/allowed_input_char_name"
+                        android:ems="10"
+                        android:focusable="true"
+                        android:hint="Nama lengkap"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="15dp" />
+
+
+
+                    <EditText
+                        android:id="@+id/editTextSEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:digits="@string/allowed_input_char_email"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="15dp" />
+
+                    <EditText
+                        android:id="@+id/editTextSPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:ems="10"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="15dp" />
+
+                    <EditText
+                        android:id="@+id/editTextSConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:ems="10"
+                        android:hint="Konfirmasi Password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="15dp" />
+
+                    <LinearLayout
+                        android:id="@+id/txtAturan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0"
+                            android:text="Dengan mendaftar, Anda telah menyetujui"
+                            android:textAlignment="gravity"
+                            android:textColor="@color/hitam_chatak"
+                            android:textSize="@dimen/text_size_12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewSyaratAturanPengguna"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:text="Aturan Pengguna "
+                                android:textAlignment="gravity"
+                                android:textColor="#F44336"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:text="dan "
+                                android:textAlignment="gravity"
+                                android:textColor="@color/hitam_chatak"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                            <TextView
+                                android:id="@+id/textViewSyaratAturanKebijakan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0"
+                                android:text="Kebijakan privasi dari Chatak"
+                                android:textAlignment="gravity"
+                                android:textColor="#F44336"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cbSetuju"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Saya setuju" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnSignUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_btn"
+                        android:text="Daftar"
+                        android:textColor="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-15dp"
+                android:layout_marginBottom="100dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="-50dp">
+
+                </LinearLayout>
+                <!--Footer-->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

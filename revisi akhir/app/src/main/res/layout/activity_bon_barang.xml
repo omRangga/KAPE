@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".transaksi_page.BonBarang">
+    <!--header kategori-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btBack"
+                android:layout_width="@dimen/text_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                app:srcCompat="@drawable/ic_chevron_left_black_24dp"
+                android:contentDescription="@string/bt_back" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/header_bon_barang"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_20sp"
+            android:textColor="@color/hitam_chatak"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <!--end header-->
+    <!--Data kategori barang-->
+    <!--judul barang-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            style="@style/row_nama_bon_barang"
+            >
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:textStyle="bold"
+                android:text="@string/nama_barang" />
+            <TextView
+                style="@style/tv_row2_ringkasan"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/_ringkasa_nama_barang"
+                android:textStyle="bold"
+                style="@style/tv_row3_ringkasan"
+                tools:text="Barang"
+                />
+        </TableRow>
+        <!--Ringkasan Barang-->
+        <!--<ScrollView android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--Ringkasan Jumlah Halaman    -->
+        <TableRow
+            android:id="@+id/rowJmlHalaman"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/jumlah_halaman" />
+            <TextView
+                style="@style/tv_row2_ringkasan" />
+            <TextView
+                android:id="@+id/ringkasan_jml_halaman"
+                style="@style/tv_row3_ringkasan" />
+        </TableRow>
+        <!--Ringkasan Pilih Warna   -->
+        <TableRow
+            android:id="@+id/rowPilihWarna"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/pilih_warna" />
+            <TextView
+                style="@style/tv_row2_ringkasan" />
+            <TextView
+                android:id="@+id/ringkasan_pilih_warna"
+                style="@style/tv_row3_ringkasan" />
+        </TableRow>
+        <!--Ringkasan Ukuran Kertas   -->
+        <TableRow
+            android:id="@+id/rowUkuranKertas"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/ukuran_kertas" />
+            <TextView
+                style="@style/tv_row2_ringkasan" />
+            <TextView
+                android:id="@+id/ringkasan_ukuran_kertas"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Jenis Kertas   -->
+        <TableRow
+            android:id="@+id/rowJenisKertas"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/jenis_kertas" />
+            <TextView
+                style="@style/tv_row2_ringkasan" />
+            <TextView
+                android:id="@+id/ringkasan_jenis_kertas"
+                style="@style/tv_row3_ringkasan" />
+        </TableRow>
+        <!--Ringkasan Sisi   -->
+        <TableRow
+            android:id="@+id/rowSisi"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/jumlah_sisi"/>
+            <TextView
+                style="@style/tv_row2_ringkasan" />
+            <TextView
+                android:id="@+id/ringkasan_sisi"
+                style="@style/tv_row3_ringkasan"
+                />
+        </TableRow>
+        <!--Warna Cetak-->
+        <TableRow
+            android:id="@+id/rowWarnaCetak"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/warna_cetak" />
+            <TextView
+                style="@style/tv_row2_ringkasan" />
+            <TextView
+                android:id="@+id/ringkasan_warna_cetak"
+                style="@style/tv_row3_ringkasan"
+                />
+        </TableRow>
+        <!--Lipatan-->
+        <TableRow
+            android:id="@+id/rowLipatan"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/lipatan" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_lipatan"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Orientasi   -->
+        <TableRow
+            android:id="@+id/rowOrientasi"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/orientasi" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_orientasi"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Pilihan Jilid-->
+        <TableRow
+            android:id="@+id/rowPilihanJilid"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/pilihan_jilid" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_pilihan_jilid"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Posisi Jilid-->
+        <TableRow
+            android:id="@+id/rowPosisiJilid"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/posisi_jilid" />
+            <TextView
+                style="@style/tv_row2_ringkasan" />
+            <TextView
+                android:id="@+id/ringkasan_posisi_jilid"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Warna-->
+        <TableRow
+            android:id="@+id/rowWarna"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/warna" />
+            <TextView
+                style="@style/tv_row2_ringkasan" />
+            <TextView
+                android:id="@+id/ringkasan_warna"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Detil Warna-->
+        <TableRow
+            android:id="@+id/rowDetilWarna"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/detil_warna" />
+            <TextView
+                style="@style/tv_row2_ringkasan" />
+            <TextView
+                android:id="@+id/ringkasan_detil_warna"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Jenis Laminasi-->
+        <TableRow
+            android:id="@+id/rowJenisLaminasi"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/jenis_laminasi" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_jenis_laminasi"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Cover Depan-->
+        <TableRow
+            android:id="@+id/rowCoverDepan"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/cover_depan" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_cover_depan"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Cover Belakang-->
+        <TableRow
+            android:id="@+id/rowCoverBelakang"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/cover_belakang" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_cover_belakang"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Foto 2x3-->
+        <TableRow
+            android:id="@+id/rowFotoDuaTiga"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/ukuran_2x3" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_foto_dua_tiga"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Foto 3x4-->
+        <TableRow
+            android:id="@+id/rowFotoTigaEmpat"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/ukuran_3x4" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_foto_tiga_empat"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Foto 4x6-->
+        <TableRow
+            android:id="@+id/rowFotoEmpatEnam"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/ukuran_4x6" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_foto_empat_enam"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Panjang-->
+        <TableRow
+            android:id="@+id/rowPanjang"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/panjang" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_panjang"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Lebar-->
+        <TableRow
+            android:id="@+id/rowLebar"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/lebar" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_lebar"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Frame-->
+        <TableRow
+            android:id="@+id/rowFrame"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/frame" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_frame"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Warna Frame-->
+        <TableRow
+            android:id="@+id/rowWarnaFrame"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/warna_frame" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_warna_frame"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Jenis Bahan-->
+        <TableRow
+            android:id="@+id/rowJenisBahan"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/jenis_bahan" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_jenis_bahan"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Warna Bahan-->
+        <TableRow
+            android:id="@+id/rowWarnaBahan"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/warna_bahan" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_warna_bahan"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Bahan-->
+        <TableRow
+            android:id="@+id/rowBahan"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/bahan" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_bahan"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Ukuran-->
+        <TableRow
+            android:id="@+id/rowUkuranBaju"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/ukuran" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_ukuran_baju"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan baju xs-->
+        <TableRow
+            android:id="@+id/rowBajuXs"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/ukuran_xs" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_baju_xs"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan baju S-->
+        <TableRow
+            android:id="@+id/rowBajuS"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/ukuran_s" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_baju_s"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan baju M-->
+        <TableRow
+            android:id="@+id/rowBajuM"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/ukuran_m" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_baju_m"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan baju XL-->
+        <TableRow
+            android:id="@+id/rowBajuXl"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/ukuran_xl" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_baju_xl"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan baju XXL-->
+        <TableRow
+            android:id="@+id/rowBajuXxl"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/ukuran_xxl" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_baju_xxl"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan jenis cetak-->
+        <TableRow
+            android:id="@+id/rowJenisCetak"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/jenis_cetak" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_jenis_cetak"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Jumlah-->
+        <TableRow
+            android:id="@+id/rowJml"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/jumlah" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_jumlah"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Ukuran Bahan-->
+        <TableRow
+            android:id="@+id/rowUkuranBahan"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/ukuran_bahan" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_ukuran_bahan"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Finishing-->
+        <TableRow
+            android:id="@+id/rowFinishing"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/finishing" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_finishing"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Jumlah Cetak   -->
+        <TableRow
+            android:id="@+id/rowJmlCetak"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/jumlah_cetak" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_jumlah_cetak"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <!--Ringkasan Waktu Proses   -->
+        <TableRow
+            android:id="@+id/rowWaktuProses"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/waktu_proses" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_waktu_proses"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/rowHargaSatuan"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/harga_satuan" />
+            <TextView
+                style="@style/tv_row2_ringkasan"/>
+            <TextView
+                android:id="@+id/ringkasan_harga_satuan"
+                style="@style/tv_row3_ringkasan"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/rowHargaTotal"
+            style="@style/row_item_bon_barang">
+            <TextView
+                style="@style/tv_row1_ringkasan"
+                android:text="@string/total_harga"
+                android:textStyle="bold"/>
+            <TextView
+                style="@style/tv_row2_ringkasan"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/ringkasan_harga_total"
+                style="@style/tv_row3_ringkasan"
+                android:textStyle="bold"/>
+        </TableRow>
+        <!--</ScrollView>-->
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_0dp"
+        android:gravity="bottom"
+        android:layout_weight="2">
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/bt_konfirmasi_barang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/outline_btn"
+                android:backgroundTint="@color/ungu_chatak"
+                android:textSize="@dimen/text_size_10sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/konfirmasi_dan_bayar"
+                />
+            <Button
+                android:id="@+id/bt_tambah_keranjang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/outline_btn"
+                android:textSize="@dimen/text_size_10sp"
+                android:text="@string/tambah_ke_keranjang"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

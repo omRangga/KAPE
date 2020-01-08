@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.unpas.chatak.transaksi_page.SignInActivity"
+	android:orientation="vertical">
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<!--header-->
+			<include layout="@layout/activity_login_header"/>
+			<!--content-->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|center_vertical"
+				android:layout_marginTop="-25dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:paddingLeft="50dp"
+				android:paddingRight="50dp">
+				<!--header sign in-->
+				<ImageView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="30dp"
+					android:paddingLeft="25dp"
+					android:paddingRight="25dp"
+					app:srcCompat="@drawable/textlogo" />
+				<!--form sign in-->
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="-5dp"
+					android:layout_marginBottom="20dp"
+					android:orientation="vertical">
+
+					<EditText
+						android:id="@+id/editTextEmail_sign_in"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:layout_marginBottom="20dp"
+						android:background="@drawable/rounded_edittext"
+						android:digits="@string/allowed_input_char_email"
+						android:ems="10"
+						android:hint="Email"
+						android:inputType="textEmailAddress"
+						android:paddingLeft="20dp"
+						android:paddingRight="15dp"
+						/>
+
+					<EditText
+						android:id="@+id/editTextPassword_sign_in"
+						android:layout_width="match_parent"
+						android:layout_height="50dp"
+						android:layout_marginBottom="20dp"
+						android:background="@drawable/rounded_edittext"
+						android:ems="10"
+						android:hint="Password"
+						android:inputType="textPassword"
+						android:paddingLeft="20dp"
+						android:paddingRight="15dp" />
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="20dp"
+						android:orientation="horizontal">
+
+						<CheckBox
+							android:id="@+id/cbIngatSaya"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_weight="1"
+							android:text="Ingat Saya"
+							android:textCursorDrawable="@color/merah_chatak" />
+
+						<TextView
+							android:id="@+id/textViewLupaSandi"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_weight="0"
+							android:text="Lupa kata sandi ? "
+							android:textAlignment="gravity"
+							android:textColor="#F00E0E" />
+
+					</LinearLayout>
+
+					<Button
+						android:id="@+id/btnSignIn"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@drawable/rounded_btn"
+						android:text="Masuk"
+						android:textColor="#ffff" />
+
+				</LinearLayout>
+
+			</LinearLayout>
+			<!--Bagian footer-->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:layout_weight="0"
+					android:accessibilityHeading="true"
+					android:text="Atau masuk dengan :" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="20dp"
+					android:gravity="center_horizontal|center_vertical">
+
+					<com.google.android.gms.common.SignInButton
+						android:id="@+id/btnSignIn_google"
+						android:layout_width="120dp"
+						android:layout_height="35dp"
+						android:layout_gravity="center_horizontal|center_vertical"
+						android:layout_marginRight="10dp">
+
+					</com.google.android.gms.common.SignInButton>
+
+					<com.facebook.login.widget.LoginButton
+						android:id="@+id/login_button"
+						android:layout_width="115dp"
+						android:layout_height="35dp"
+						android:layout_gravity="center_horizontal|center_vertical" />
+
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="39dp"
+					android:layout_gravity="center"
+					android:layout_marginBottom="50dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="5dp"
+						android:layout_weight="0"
+						android:text="Belum punya akun ?, buat akun"
+						android:textSize="14sp" />
+
+					<Button
+						android:id="@+id/btnSignUpChatak"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:layout_weight="0"
+						android:background="@drawable/rounded_btn"
+						android:gravity="center_horizontal|center_vertical"
+						android:minWidth="52dp"
+						android:minHeight="20dp"
+						android:text="disini"
+						android:textAllCaps="false"
+						android:textColor="@color/colorPrimary"
+						android:textSize="12sp" />
+
+				</LinearLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--elevation-->
+    <dimen name="background_elevation_3dp">3dp</dimen>
+    <dimen name="background_elevation_4dp">4dp</dimen>
+    <dimen name="background_elevation_6dp">6dp</dimen>
+
+    <!--layout width-->
+    <dimen name="width_header_transaksi">72dp</dimen>
+    <!--image-->
+    <dimen name="image_heigh_200dp">200dp</dimen>
+
+    <!--horizontal scroll item layout-->
+    <dimen name="h_s_item_layout_width">75dp</dimen>
+    <dimen name="h_s_item_layout_hight">75dp</dimen>
+
+    <!--layout-->
+    <dimen name="layout_height_230dp">230dp</dimen>
+    <dimen name="layout_height_15dp">15dp</dimen>
+    <dimen name="layout_width_15dp">15dp</dimen>
+    <dimen name="layout_height_100dp">100dp</dimen>
+    <dimen name="layout_width_100dp">100dp</dimen>
+    <dimen name="layout_height_30dp">30dp</dimen>
+
+    <!--margin-->
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+
+    <!--text size-->
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_15sp">15sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+
+    <!--padding-->
+    <dimen name="padding_2_5dp">2.5dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
+    <dimen name="padding_25dp">25dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="lebar_layout_bgBtn">120dp</dimen>
+    <dimen name="lebar_tombol">80dp</dimen>
+    <dimen name="tinggi_tombol">120dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="normal_speed" format="float" type="dimen">100</dimen>
+    <dimen name="high_speed" format="float" type="dimen">120</dimen>
+    <dimen name="low_speed" format="float" type="dimen">50</dimen>
+    <dimen name="movie_title_padding">10dp</dimen>
+    <dimen name="movie_title">15dp</dimen>
+    <dimen name="movie_cover_height">150dp</dimen>
+    <dimen name="card_movie_radius">10dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="layout_margin_left">10dp</dimen>
+    <dimen name="layout_margin_top">3dp</dimen>
+    <dimen name="layout_margin_top2">10dp</dimen>
+    <dimen name="padding_layout">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_0dp">0dp</dimen>
+    <dimen name="text_40dp">40dp</dimen>
+    <dimen name="text_20dp">20dp</dimen>
+    <dimen name="text_30dp">30dp</dimen>
+</resources>

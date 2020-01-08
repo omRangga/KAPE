@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/edit_profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:elevation="@dimen/background_elevation_6dp"
+                    android:padding="@dimen/padding_6dp"
+                    android:src="@drawable/foto_profile"
+                    app:civ_border_color="#ffff"
+                    app:civ_border_width="5dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/edit_foto_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_foto_profile"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/edit_nama_lengkap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="@string/text_nama_lengkap"
+                android:inputType="textPersonName"
+                android:lines="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_16dp">
+
+                <EditText
+                    android:id="@+id/edit_email_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="12"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="start"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:lines="2" />
+
+                <Button
+                    android:id="@+id/edit_email_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#03A9F4"
+                    android:text="Ubah"
+                    android:textColor="#ffff" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Password(kosongkan bila tidak diubah)"
+                android:inputType="textPassword"
+                android:lines="2" />
+
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Nomor telepon"
+                android:inputType="phone"
+                android:lines="2" />
+            <EditText
+                android:id="@+id/edit_kode_verifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Kode verifikasi"
+                android:inputType="phone"
+                android:lines="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/batal_kirim_kode_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+
+                    android:layout_weight="1"
+                    android:backgroundTint="#03A9F4"
+                    android:text="Batal"
+                    android:textColor="#ffff" />
+                <Button
+                    android:id="@+id/kirim_kode_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#03A9F4"
+                    android:text="Kirim kode"
+                    android:textColor="#ffff" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llHorizonEditPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp">
+
+                <Button
+                    android:id="@+id/kirim_ulang_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#03A9F4"
+                    android:text="kirim ulang"
+                    android:textColor="#ffff" />
+
+                <Button
+                    android:id="@+id/cek_kode_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#03A9F4"
+                    android:text="Cek kode"
+                    android:textColor="#ffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/batal_simpan_edit_profile_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#03A9F4"
+                    android:text="Batal"
+                    android:textColor="#ffff" />
+
+                <Button
+                    android:id="@+id/simpan_edit_profile_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#03A9F4"
+                    android:text="Simpan"
+                    android:textColor="#ffff" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

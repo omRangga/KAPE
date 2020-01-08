@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "983744750801",
+    "firebase_url": "https://com-unpas-chatak.firebaseio.com",
+    "project_id": "com-unpas-chatak",
+    "storage_bucket": "com-unpas-chatak.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983744750801:android:35185244ed116ce0",
+        "android_client_info": {
+          "package_name": "com.unpas.chatak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983744750801-8s8uc9179g8osiutm3mojddql4j7891g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unpas.chatak",
+            "certificate_hash": "a86fba495c136c0625a2984041a024a07e568661"
+          }
+        },
+        {
+          "client_id": "983744750801-u2hqoiq2ashgp3q406oo7trls9kdj5b8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unpas.chatak",
+            "certificate_hash": "9a22758ec02f1e8fe72cdc11fb901abcc8fe71e2"
+          }
+        },
+        {
+          "client_id": "983744750801-08ktg5519ejmk9aqe7hld9dvppvnj7b0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unpas.chatak",
+            "certificate_hash": "72f2fccb30afec1153f1c0cbc5b78c25b7f3d188"
+          }
+        },
+        {
+          "client_id": "983744750801-mujgrascmbufsq6s5b1kcuqvp41m6q4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDChJCWhhuoUB_jc9lip1xbn9POShmOopI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983744750801-3090fqdg8gb76thbbk91tpkdd3914l4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

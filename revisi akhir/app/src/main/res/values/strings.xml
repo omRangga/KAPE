@@ -1,0 +1,772 @@
+<resources>
+    <!--Konten Umum-->
+    <string name="app_name">Chatak</string>
+    <string name="title_home">Home</string>
+    <string name="title_dokumen">Dokumen</string>
+    <string name="title_media_promosi">Media Promosi</string>
+    <string name="title_souvenir">Souvenir</string>
+    <string name="title_keranjang">Keranjang</string>
+    <string name="header_transaksi">GET_KATEGORI</string>
+    <string name="header_bon_barang">Ringkasan</string>
+    <string name="format_file">Format File</string>
+    <string name="ketentuan_file">Ketentuan File</string>
+    <string name="ukuran_maksimum_file">Ukuran Maksimum File</string>
+    <string name="rekomendasi">Rekomendasi</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="notifikasi">Notifikasi</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="title_alamat_saya">Alamat Saya</string>
+    <string name="text_nama_lengkap">Nama Lengkap</string>
+    <string name="text_alamat">Alamat</string>
+    <string name="text_kode_pos">Kode Pos</string>
+    <string name="text_no_hp">No Hp</string>
+    <string name="edit_foto_profile">Edit Foto Profile</string>
+
+
+    <!--horizontal scroll item text (home)-->
+    <string name="text_title">title</string>
+    <string name="text_description">description</string>
+    <string name="text_price">price</string>
+    <string name="content_descriptionn">yeah! click me!</string>
+    <string name="text_lihat_semua">Lihat Semua</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_title">Pencarian barang</string>
+    <string name="search_hint">Pencarian</string>
+    <!-- daftar input karakter yang diperbolehkan -->
+    <string name="allowed_input_char_name">0123456789qwertzui opasdfghjklyxcvbnmABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="allowed_input_char_email">0123456789qwertzuiopasdfghjklyxcvbnm@-_ABCDEFGHIJKLMNOPQRSTUVWXYZ.</string>
+    <string name="allowed_input_char_phone">0123456789+</string>
+
+    <!--Daftar Form Pengisian-->
+
+    <!--Value jumlah halaman spinner-->
+    <string-array name="jml_halaman_1">
+        <item>40</item>
+        <item>80</item>
+    </string-array>
+    <string-array name="jml_halaman_2">
+        <item>50 Lembar</item>
+    </string-array>
+    <string-array name="jml_halaman_3">
+        <item>500 Lembar (1 Rim)</item>
+    </string-array>
+    <string-array name="jml_halaman_4">
+        <item>1 pak(100 Pcs)</item>
+    </string-array>
+    <!--end jumlah halaman spinner-->
+    <!--Value pilih warna-->
+    <string-array name="pilih_warna">
+        <item>Warna</item>
+        <item>Hitam</item>
+        <item>Laser Hitam</item>
+    </string-array>
+    <string-array name="pilih_warna_2">
+        <item>1 Warna</item>
+        <item>2 Warna</item>
+        <item>3 Warna</item>
+    </string-array>
+    <string-array name="pilih_warna_3">
+        <item>1 Warna</item>
+        <item>2 Warna</item>
+        <item>3 Warna</item>
+        <item>Full Warna</item>
+    </string-array>
+    <string-array name="pilih_warna_4">
+        <item>Full Warna</item>
+    </string-array>
+    <string-array name="pilih_warna_5">
+        <item>Laser Hitam</item>
+    </string-array>
+
+    <!--end pilihan warna-->
+
+    <!--Value jenis kertas -->
+    <string-array name="jenis_kertas">
+        <item>HVS 80 GSM</item>
+    </string-array>
+    <string-array name="jenis_kertas_20">
+        <item>Rapel</item>
+        <item>Twin</item>
+        <item>Drill</item>
+    </string-array>
+
+    <!--Value jenis kertas sertifikat-->
+    <string-array name="jenis_kertas_2">
+        <item>Concord</item>
+        <item>Linen</item>
+        <item>ArtPaper 210 Gsm</item>
+        <item>ArtPaper 260 Gsm</item>
+    </string-array>
+
+    <!--Value jenis kertas portofolio-->
+    <string-array name="jenis_kertas_3">
+        <item>ArtPaper 210 Gsm</item>
+        <item>Manila</item>
+        <item>Concord</item>
+        <item>Glossy</item>
+    </string-array>
+
+    <string-array name="jenis_kertas_4">
+        <item>HVS WaterMark</item>
+        <item>HVS Polos</item>
+    </string-array>
+
+    <!--jenis kertas nota-->
+    <string-array name="jenis_kertas_5">
+        <item>Nota Tanpa Rangkap</item>
+        <item>Nota Rangkap 2</item>
+        <item>Nota Rangkap 3</item>
+        <item>Nota Rangkap 4</item>
+    </string-array>
+
+    <string-array name="jenis_kertas_6">
+        <item>HVS 80 Gsm</item>
+        <item>HVS 100 Gsm</item>
+    </string-array>
+
+    <string-array name="jenis_kertas_7">
+        <item>Putih Standar 11x23cm</item>
+        <item>Putih Folio 23x35cm</item>
+        <item>Coklat Folio 23x35cm</item>
+    </string-array>
+
+    <string-array name="jenis_kertas_8">
+        <item>Glossy</item>
+    </string-array>
+    <string-array name="jenis_kertas_9">
+        <item>ArtPaper 260 Gsm</item>
+    </string-array>
+    <string-array name="jenis_kertas_10">
+        <item>ArtPaper 210 Gsm</item>
+        <item>ArtPaper 260 Gsm</item>
+        <item>Glossy</item>
+    </string-array>
+    <string-array name="jenis_kertas_11">
+        <item>ArtPaper 210 Gsm</item>
+        <item>ArtPaper 260 Gsm</item>
+    </string-array>
+    <string-array name="jenis_kertas_12">
+        <item>Glossy</item>
+        <item>ArtPaper 210 Gsm</item>
+        <item>ArtPaper 260 Gsm</item>
+    </string-array>
+    <string-array name="jenis_kertas_13">
+        <item>ArtPaper 150 Gsm</item>
+    </string-array>
+    <string-array name="jenis_kertas_14">
+        <item>HVS Warna</item>
+    </string-array>
+    <string-array name="jenis_kertas_15">
+        <item>ArtPaper 150 Gsm</item>
+        <item>ArtPaper 210 Gsm</item>
+        <item>ArtPaper 260 Gsm</item>
+    </string-array>
+    <string-array name="jenis_kertas_16">
+        <item>ArtPaper 120 Gsm</item>
+        <item>ArtPaper 150 Gsm</item>
+        <item>ArtPaper 210 Gsm</item>
+    </string-array>
+    <string-array name="jenis_kertas_17">
+        <item>0.6 X 2.9 Cm</item>
+        <item>0.8 X 3.8 Cm</item>
+        <item>3 X 4 Cm</item>
+        <item>1.7 X 5 Cm</item>
+        <item>2.2 X 5 Cm</item>
+        <item>3.1 X 4.6 Cm</item>
+        <item>1.7 X 6.2 Cm</item>
+        <item>3 X 3 Cm</item>
+        <item>6.1 X 8 Cm</item>
+        <item>Diameter 1.5 Cm</item>
+        <item>Diameter 2 Cm</item>
+        <item>Diameter 3.5 Cm</item>
+        <item>Diameter 4 Cm</item>
+    </string-array>
+    <string-array name="jenis_kertas_18">
+        <item>Stiker Vinil</item>
+        <item>Stiker Oneway</item>
+        <item>Stiker Transparan</item>
+    </string-array>
+    <string-array name="jenis_kertas_19">
+        <item>Artpaper 120 Gsm 2 Halaman</item>
+        <item>Artpaper 120 Gsm 3 Halaman</item>
+        <item>Artpaper 120 Gsm 4 Halaman</item>
+        <item>Artpaper 120 Gsm 6 Halaman</item>
+        <item>Artpaper 120 Gsm 12 Halaman</item>
+    </string-array>
+    <!--end jenis kertas-->
+
+    <!--Value ukuran kertas-->
+    <string-array name="ukuran_kertas">
+        <item>A4</item>
+        <item>A5</item>
+    </string-array>
+    <string-array name="ukuran_kertas_2">
+        <item>A3</item>
+    </string-array>
+    <string-array name="ukuran_kertas_3">
+        <item>A5 (10 Pcs)</item>
+    </string-array>
+    <string-array name="ukuran_kertas_4">
+        <item>Folio (jadi 10 Buku), 1/2</item>
+        <item>Folio (jadi 20 Buku), 1/3</item>
+        <item>Folio (jadi 30 Buku), 1/4</item>
+        <item>Folio (jadi 40 Buku), 1/5</item>
+        <item>Folio (jadi 50 Buku)</item>
+    </string-array>
+    <string-array name="ukuran_kertas_5">
+        <item>A4 (1 Rim)</item>
+        <item>Folio (1 Rim)</item>
+    </string-array>
+    <string-array name="ukuran_kertas_6">
+        <item>A4 (250 Pcs)</item>
+        <item>Folio(250 Pcs)</item>
+    </string-array>
+    <string-array name="ukuran_kertas_7">
+        <item>2R (4 Lembar)</item>
+        <item>3R (4 Lembar)</item>
+        <item>4R (4 Lembar)</item>
+        <item>5R (2 Lembar)</item>
+        <item>8R</item>
+        <item>8RP</item>
+        <item>12R</item>
+        <item>12RP</item>
+        <item>16R</item>
+        <item>16RP</item>
+        <item>20R</item>
+        <item>20RP</item>
+        <item>24R</item>
+        <item>24RP</item>
+    </string-array>
+    <string-array name="ukuran_kertas_8">
+        <item>B4 (150x105 Mm)</item>
+        <item>B3 (124x95 Mm)</item>
+        <item>B2 (124x80 Mm)</item>
+    </string-array>
+    <string-array name="ukuran_kertas_9">
+        <item>Regular (9x5.5cm)</item>
+        <item>Slim (9x5cm)</item>
+    </string-array>
+    <string-array name="ukuran_kertas_10">
+        <item>A3</item>
+        <item>A4</item>
+    </string-array>
+    <string-array name="ukuran_kertas_11">
+        <item>A4</item>
+    </string-array>
+    <string-array name="ukuran_kertas_12">
+        <item>A3</item>
+        <item>A3+</item>
+        <item>A4</item>
+    </string-array>
+    <string-array name="ukuran_kertas_13">
+        <item>A6</item>
+        <item>A5</item>
+        <item>A4</item>
+        <item>1/3 A4</item>
+    </string-array>
+    <string-array name="ukuran_kertas_14">
+        <item>A6 (8 Pcs)</item>
+        <item>A5 (4 Pcs)</item>
+        <item>A4 (2 Pcs)</item>
+        <item>1/3 A4 (6 Pcs)</item>
+    </string-array>
+    <string-array name="ukuran_kertas_15">
+        <item>Stempel Warna</item>
+        <item>Stempel Trodat</item>
+        <item>Stempel Kayu</item>
+    </string-array>
+    <string-array name="ukuran_kertas_16">
+        <item>26x38 (250 Eksemplar)</item>
+        <item>31x48 (250 Eksemplar)</item>
+        <item>38x53 (250 Eksemplar)</item>
+        <item>44x64 (250 Eksemplar)</item>
+    </string-array>
+    <string-array name="ukuran_kertas_17">
+        <item>20x15 Cm (250 Eksemplar)</item>
+    </string-array>
+    <string-array name="ukuran_kertas_18">
+        <item>PoliFlex Warna Biasa</item>
+        <item>PoliFlex Gold/Silver</item>
+        <item>PoliFlex Fosfor</item>
+    </string-array>
+    <!--end ukuran kertas-->
+
+    <!--Value sisi kertas-->
+    <string-array name="sisi">
+        <item>1 sisi</item>
+        <item>2 sisi</item>
+    </string-array>
+
+    <string-array name="sisi1">
+        <item>1 Sisi</item>
+    </string-array>
+
+    <string-array name="sisi2">
+        <item>2 Sisi</item>
+    </string-array>
+    <!--end sisi kertas-->
+
+    <!--Value orientasi-->
+    <string-array name="orientasi">
+        <item>Portrait</item>
+        <item>Landscape</item>
+    </string-array>
+    <string-array name="orientasi_portrait">
+        <item>Portrait</item>
+    </string-array>
+    <!--end orientasi-->
+
+    <!--Value pilihan jilid-->
+    <string-array name="pilihan_jilid">
+        <item>Tanpa Jilid</item>
+        <item>Hekter</item>
+        <item>Biasa/Lakban</item>
+        <item>Ring Kawat</item>
+        <item>Ring Plastik</item>
+    </string-array>
+
+    <string-array name="pilihan_jilid_2">
+        <item>Ring Kawat</item>
+        <item>Ring Plastik</item>
+        <item>SoftCover</item>
+    </string-array>
+
+    <string-array name="pilihan_jilid_3">
+        <item>Tanpa Jilid</item>
+        <item>Hekter</item>
+    </string-array>
+
+    <string-array name="pilihan_jilid_4">
+        <item>Ring Kawat</item>
+        <item>Ring Plastik</item>
+    </string-array>
+
+    <string-array name="pilihan_jilid_5">
+        <item>HandCover Tinta Emas</item>
+        <item>HandCover Tinta Warna</item>
+        <item>SoftCover</item>
+    </string-array>
+
+    <string-array name="pilihan_jilid_6">
+        <item>Hekter</item>
+    </string-array>
+
+    <string-array name="pilihan_jilid_7">
+        <item>Biasa</item>
+        <item>Ring Kawat</item>
+    </string-array>
+
+    <string-array name="pilihan_jilid_8">
+        <item>Tanpa Nomor</item>
+        <item>Dengan Nomor</item>
+    </string-array>
+    <!--end pilihan jilid-->
+
+    <!--Value waktu proses-->
+    <string-array name="waktu_proses">
+        <item>Segera Diproses</item>
+        <item>1 Hari Kerja</item>
+        <item>2 Hari Kerja</item>
+    </string-array>
+    <!--end waktu proses-->
+
+    <!--Value posisi jilid-->
+    <string-array name="posisi_jilid">
+        <item>Sisi Kiri</item>
+    </string-array>
+    <string-array name="posisi_jilid_2">
+        <item>Sisi Atas</item>
+        <item>Sisi Kiri</item>
+    </string-array>
+    <string-array name="sub_posisi_jilid">
+        <item>1 Kanan Atas</item>
+        <item>1 Kiri Atas</item>
+        <item>2 Kiri</item>
+    </string-array>
+    <!--end posisi jilid-->
+
+    <!--Value jenis laminasi-->
+    <string-array name="jenis_laminasi">
+        <item>Laminasi Biasa</item>
+        <item>Laminasi Glossy</item>
+    </string-array>
+    <string-array name="jenis_laminasi_2">
+        <item>Tanpa Laminasi</item>
+        <item>Laminasi Biasa</item>
+    </string-array>
+    <string-array name="jenis_laminasi_3">
+        <item>Tanpa Laminasi</item>
+        <item>Laminasi Glossy</item>
+        <item>Laminasi Doff</item>
+    </string-array>
+    <string-array name="jenis_laminasi_4">
+        <item>Lengan Pendek</item>
+        <item>Lengan Panjang</item>
+    </string-array>
+    <!--end jenis laminasi-->
+
+    <!--Value cover depan-->
+    <string-array name="cover_depan">
+        <item>ArtPaper 260 Gsm</item>
+    </string-array>
+    <string-array name="cover_depan_2">
+        <item>Tanpa Porporasi</item>
+        <item>Dengan Porporasi</item>
+    </string-array>
+    <string-array name="cover_depan_3">
+        <item>2 Sisi</item>
+        <item>1 Sisi</item>
+    </string-array>
+    <string-array name="sub_cover_depan">
+        <item>Mika Bening</item>
+        <item>Mika Merah</item>
+        <item>Mika Biru</item>
+        <item>Mika Hijau</item>
+    </string-array>
+    <!--end cover depan-->
+    <!--Value Cover Belakang-->
+    <string-array name="sub_cover_belakang">
+        <item>Mika Merah</item>
+        <item>Mika Biru</item>
+        <item>Mika Hijau</item>
+        <item>Buffalo Merah</item>
+        <item>Buffalo Biru</item>
+        <item>Buffalo Hijau</item>
+        <item>Buffalo Putih</item>
+    </string-array>
+    <!--end value Cover Belakang-->
+
+    <!--Value jumlah foto-->
+    <string-array name="jumlah_foto">
+        <item>Tidak dicetak</item>
+        <item>4 Lembar</item>
+        <item>8 Lembar</item>
+        <item>12 Lembar</item>
+    </string-array>
+    <!--end jumlah foto-->
+
+    <!--Value frame-->
+    <string-array name="frame">
+        <item>Tanpa Frame</item>
+        <item>Frame Minimalis</item>
+    </string-array>
+    <!--end frame-->
+
+    <!--Value jenis bahan-->
+    <string-array name="jenis_bahan">
+        <item>Flexy China</item>
+        <item>Flexy Korea</item>
+        <item>Korcin Tebal</item>
+    </string-array>
+    <string-array name="jenis_bahan_2">
+        <item>Flexy</item>
+        <item>Luster</item>
+    </string-array>
+    <string-array name="jenis_bahan_3">
+        <item>Kain Satin</item>
+    </string-array>
+    <string-array name="jenis_bahan_4">
+        <item>Softcombed 30 S</item>
+        <item>Softcombed 24 S</item>
+        <item>Softcombed 20 S</item>
+        <item>Cardet</item>
+    </string-array>
+    <string-array name="jenis_bahan_5">
+        <item>Mug Putih</item>
+        <item>Mug Warna Dalam</item>
+        <item>Mug Warna Luar</item>
+        <item>Mug Love Putih</item>
+        <item>Mug Love Warna Luar</item>
+        <item>Mug Transparan</item>
+        <item>Mug Bunglon</item>
+        <item>Mug Kembung</item>
+    </string-array>
+    <string-array name="jenis_bahan_6">
+        <item>Pin 44 Mm</item>
+        <item>Pin 58 Mm</item>
+    </string-array>
+    <string-array name="jenis_bahan_7">
+        <item>Ganci 44 Mm</item>
+        <item>Ganci 58 Mm</item>
+    </string-array>
+    <string-array name="jenis_bahan_8">
+        <item>Payung Golf (100 Pcs)</item>
+        <item>Payung Panjang (100 Pcs)</item>
+        <item>Payung Lipat 2 (100 Pcs)</item>
+        <item>Payung Lipat 3 (100 Pcs)</item>
+        <item>Payung Sakura (100 Pcs)</item>
+        <item>Payung Botol (100 Pcs)</item>
+    </string-array>
+    <!--end jenis bahan-->
+
+    <!-- Valuewarna-->
+    <string-array name="warna">
+        <item>Putih</item>
+        <item>Hitam</item>
+        <item>Warna</item>
+        <item>Raglan</item>
+    </string-array>
+    <!--end value warna-->
+
+    <!--Value warna cetak-->
+    <string-array name="warna_cetak">
+        <item>Merah</item>
+        <item>Hijau</item>
+        <item>Biru</item>
+    </string-array>
+    <string-array name="warna_cetak_2">
+        <item>1 Warna Biru</item>
+        <item>1 Warna Hijau</item>
+        <item>Warna Merah</item>
+        <item>2 Warna</item>
+    </string-array>
+    <!--end warna cetak-->
+
+    <!--Value lipatan-->
+    <string-array name="lipatan">
+        <item>Tanpa Lipatan</item>
+        <item>Lipatan 2</item>
+        <item>Lipatan Z</item>
+        <item>Lipatan Gerbang</item>
+        <item>Lipatan Terurut</item>
+        <item>Lipatan Gerbang Ganda</item>
+        <item>Lipatan Paralel Ganda</item>
+        <item>Lipatan Perancis</item>
+        <item>Lipatan Gulung</item>
+        <item>Lipatan 2 lalu Lipatan 3</item>
+    </string-array>
+    <string-array name="lipatan_2">
+        <item>Tanpa Lipatan</item>
+        <item>Lipatan 2</item>
+        <item>Lipatan 3</item>
+        <item>Lipatan Z</item>
+    </string-array>
+    <!--end lipatan-->
+
+    <!--Value bahan-->
+    <string-array name="bahan">
+        <item>Glossy</item>
+        <item>Doff</item>
+        <item>Canvas</item>
+    </string-array>
+    <!--end bahan-->
+
+    <!--Value warna bahan-->
+    <string-array name="warna_bahan">
+        <item>Merah</item>
+        <item>Hijau</item>
+        <item>Biru</item>
+    </string-array>
+    <!--end warna bahan-->
+
+    <!--Value ukuran baju-->
+    <string-array name="ukuran_baju">
+        <item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>XL</item>
+        <item>XXL</item>
+    </string-array>
+    <!--end ukuran baju-->
+
+    <!--Value jenis cetak-->
+    <string-array name="jenis_cetak">
+        <item>Rubber 1 Warna A3</item>
+        <item>Rubber 2 Warna A3</item>
+        <item>Rubber 3 Warna A3</item>
+        <item>Super White 1 Warna A3</item>
+        <item>Super White 2 Warna A3</item>
+        <item>Super White 3 Warna A3</item>
+    </string-array>
+    <string-array name="jenis_cetak_2">
+        <item>DTG Full Warna A4</item>
+        <item>DTG Full Warna A3</item>
+        <item>PoliFlex 1 Warna A3</item>
+        <item>PoliFlex 2 Warna A3</item>
+        <item>PoliFlex 3 Warna A3</item>
+    </string-array>
+    <string-array name="jenis_cetak_3">
+        <item>Kaos Reguler</item>
+        <item>Kaos Full Warna</item>
+    </string-array>
+    <!--end jenis cetak-->
+
+    <!--Value finishing -->
+    <string-array name="finishing">
+        <item>Peniti</item>
+        <item>Magnet</item>
+    </string-array>
+    <string-array name="finishing_2">
+        <item>Tanpa Finishing</item>
+        <item>Dilipat Saja</item>
+        <item>Lubang 4 di Semua Ujung</item>
+        <item>Lubang 2 di Ujung Atas</item>
+        <item>Lubang di Sisi Atas Setiap 1 Meter</item>
+        <item>Lubang di Semua sisi Setiap 1 Meter</item>
+    </string-array>
+    <string-array name="finishing_3">
+        <item>2 Sisi</item>
+        <item>4 Sisi</item>
+    </string-array>
+    <!--end finishing-->
+
+    <!--Value ukuran bahan-->
+    <string-array name="ukuran_bahan">
+        <item>Jam Dinding 20Cm</item>
+        <item>Jam Dinding 26Cm</item>
+        <item>Jam Dinding 32Cm</item>
+        <item>Jam Dinding 36Cm</item>
+    </string-array>
+    <string-array name="ukuran_bahan_2">
+        <item>X Banner 160x60 Cm</item>
+        <item>X Banner 160x80 Cm</item>
+        <item>Y Banner 160x60 Cm</item>
+        <item>Y Banner 160x80 Cm</item>
+        <item>Roll Up Banner 160x60 Cm</item>
+        <item>Roll Up Banner 200x80 Cm</item>
+    </string-array>
+    <string-array name="ukuran_bahan_3">
+        <item>Bolpoin A (Jadi 10 Pcs)</item>
+        <item>Bolpoin B (Jadi 10 Pcs)</item>
+        <item>Bolpoin C (Jadi 10 Pcs)</item>
+        <item>Bolpoin A (Jadi 50 Pcs)</item>
+        <item>Bolpoin B (Jadi 50 Pcs)</item>
+        <item>Bolpoin C (Jadi 50 Pcs)</item>
+    </string-array>
+    <string-array name="ukuran_bahan_4">
+        <item>Tumbler Stainless</item>
+        <item>Tumbler Plastik Besar</item>
+        <item>Tumbler Plastik Kecil</item>
+    </string-array>
+    <string-array name="ukuran_bahan_5">
+        <item>Akrilik 15 Cm2</item>
+        <item>Akrilik 20 Cm2</item>
+        <item>Akrilik 25 Cm2</item>
+    </string-array>
+    <string-array name="ukuran_bahan_6">
+        <item>Tas Kresek 32x21 Cm (1000 Pcs)</item>
+        <item>Tas Kresek 38x28 Cm (1000 Pcs)</item>
+    </string-array>
+    <string-array name="ukuran_bahan_7">
+        <item>Kipas A (Jadi 100 Pcs)</item>
+        <item>Kipas B (Jadi 100 Pcs)</item>
+        <item>Kipas C (Jadi 100 Pcs)</item>
+    </string-array>
+    <!--end ukuran bahan-->
+    <!--end daftar form pengisian-->
+
+    <string name="title_activity_ketentuan_pengguna">KetentuanPenggunaActivity</string>
+    <!--<string name="default_web_client_id">543395259228-6mospul33il1igf0jlp8hhof15a5m05r.apps.googleusercontent.com</string>-->
+    <!--facebook-->
+    <string name="facebook_app_id">2447327175326440</string>
+    <string name="fb_login_protocol_scheme">fb2447327175326440</string>
+
+    <!--others-->
+    <string name="jumlah_halaman">Jumlah Halaman</string>
+    <string name="pilih_warna">Pilih Warna</string>
+    <string name="ukuran_kertas">Ukuran Kertas</string>
+    <string name="jenis_kertas">Jenis Kertas</string>
+    <string name="jumlah_sisi">Jumlah Sisi</string>
+    <string name="warna_cetak">Warna Cetak</string>
+    <string name="lipatan">Lipatan</string>
+    <string name="orientasi">Orientasi</string>
+    <string name="pilihan_jilid">Pilihan Jilid</string>
+    <string name="posisi_jilid">Posisi Jilid</string>
+    <string name="warna">Warna</string>
+    <string name="frame">Frame</string>
+    <string name="cover_depan">Cover Depan</string>
+    <string name="cover_belakang">Cover Belakang</string>
+    <string name="jenis_laminasi">Jenis Laminasi</string>
+    <string name="ukuran_2x3">Ukuran 2x3</string>
+    <string name="ukuran_3x4">Ukuran 3x4</string>
+    <string name="ukuran_4x6">Ukuran 4x6</string>
+    <string name="panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string name="ukuran_bahan">Ukuran Bahan</string>
+    <string name="bahan">Bahan</string>
+    <string name="warna_bahan">Warna Bahan</string>
+    <string name="ukuran">Ukuran</string>
+    <string name="ukuran_xs">Ukuran Xs</string>
+    <string name="ukuran_s">Ukuran S</string>
+    <string name="ukuran_m">Ukuran M</string>
+    <string name="ukuran_l">Ukuran L</string>
+    <string name="ukuran_xl">Ukuran Xl</string>
+    <string name="ukuran_xxl">Ukuran Xxl</string>
+    <string name="jenis_cetak">Jenis Cetak</string>
+    <string name="jumlah">Jumlah</string>
+    <string name="finishing">Finishing</string>
+    <string name="jumlah_cetak">Jumlah Cetak</string>
+    <string name="waktu_proses">Waktu Proses</string>
+    <string name="jenis_bahan">Jenis Bahan</string>
+    <string name="back_home">back_home</string>
+    <string name="image_barang">image_barang</string>
+    <string name="tambah">Tambah</string>
+    <string name="_500mb">500MB</string>
+    <string name="pdf">PDF</string>
+    <string name="default_rekomendasi">* Mencetak dari File Sumber dengan Kualitas Tinggi.\n* Memproses Order Sebaik Mungkin.</string>
+    <string name="spesifikasi_dan_harga">Spesifikasi dan Harga</string>
+    <string name="jumlah_cetak_default">2</string>
+    <string name="total_harga">Total Harga</string>
+    <string name="currency_barang">RP.</string>
+    <string name="harga_default">0.0</string>
+    <string name="harga_satuan">Harga Satuan</string>
+    <string name="upload_file">Upload File</string>
+    <string name="cetak">Cetak</string>
+    <string name="bt_back">bt_back</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="pembatas">:</string>
+    <string name="konfirmasi_dan_bayar">Konfirmasi dan Bayar</string>
+    <string name="tambah_ke_keranjang">Tambah ke Keranjang</string>
+    <string name="format_jpg_png">JPG/PNG</string>
+    <string name="format_jpg_png_pdf">JPG/PNG/PDF</string>
+    <string name="format_pdf_jpg">PDF/JPG</string>
+    <string name="detail_warna">Detail Warna</string>
+    <string name="warna_frame">Warna Frame</string>
+    <string name="detil_warna">Detail Warna</string>
+    <string name="settings">Pengaturan</string>
+    <string name="daily_stats_enabled">Pemberitahuan Harian Aktif</string>
+    <string name="daily_stats_disabled">Pemberitahuan Harian Dibatalkan</string>
+    <string name="desc_daily_reminder">Ayo Buka Chatak Sekarang !!</string>
+    <string name="daily_reminder">Waktunya Buka Chatak</string>
+    <string name="id_fcm">title</string>
+    <string name="notif_promo_enabled">Pemberitahuan Promo Aktif</string>
+    <string name="notif_promo_disabled">Pemberitahuan Promo Dibatalkan</string>
+    <string name="chatak_promo">Promo Chatak!!</string>
+    <string name="notification_title">Notifikasi</string>
+
+    <!--warna frame-->
+    <string-array name="warna_frame">
+        <item>Hitam</item>
+        <item>Putih</item>
+    </string-array>
+    <!--end warna frame-->
+    <!--sub warna-->
+    <string-array name="detil_warna">
+        <item>Merah</item>
+        <item>Biru Muda</item>
+        <item>Biru Tua</item>
+        <item>Hijau Tua</item>
+    </string-array>
+    <!--end value warna-->
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="title_activity_link_account">LinkAccountActivity</string>
+
+    <!--Value Mode Pembayaran-->
+    <string name="tf_virtual"><b><b>Transfer melalui Virtual Account</b></b>
+        \nBank BCA, Bank BNI, dll
+        \n\n <i>Lihat Keterangan</i></string>
+    <string name="kartu_kredit">Kartu Kredit
+    \nBayar penuh atau Cicilan 0%</string>
+    <string name="kartu_debit">kartu Debit
+    \nBayar Penuh</string>
+    <string name="internet_banking">Internet Banking</string>
+    <string name="bayar_gerai">Bayar di Gerai
+    \nAlfaGroup, Indomaret</string>
+    <string name="uang_elektronik">Uang Elektronik
+        \nGo-Pay, LinkAja, Sakuku, Xl, Tunai
+    </string>
+
+
+</resources>

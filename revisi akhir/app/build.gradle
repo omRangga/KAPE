@@ -1,0 +1,91 @@
+apply plugin: 'com.android.application'
+android {
+    signingConfigs {
+        config {
+            storeFile file('D:\\Fadil\\Perkuliahan\\Magang\\chatakbersatukitateguh\\app\\keystore.jks')
+            storePassword 'chatakalpha1.0'
+            keyAlias = 'key0'
+            keyPassword 'chatakalpha1.0'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.unpas.chatak"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:palette-v7:28.0.0'
+    //persistance
+    implementation 'android.arch.persistence.room:runtime:1.0.0'
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0"
+    // for butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    // for stetho
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.synnapps:carouselview:0.1.4'
+    //persistance
+    implementation 'android.arch.persistence.room:runtime:1.0.0'
+    annotationProcessor "android.arch.persistence.room:compiler:1.0.0"
+    // for stetho
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    //google sign-in
+    //^google-play
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    //firebase conf (2
+    implementation 'com.google.firebase:firebase-core:15.0.0'
+    implementation 'com.google.firebase:firebase-messaging:15.0.0'
+    //firebase conf (3 auth
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    //fcm
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    //circle image
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    //retrofit , gson
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //for facebook login
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+    //async & viewmodel
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.1"
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    //cloud message
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    //in app messaging and analytics firebse
+    implementation 'com.google.firebase:firebase-inappmessaging-display:17.1.1'
+    implementation 'com.google.firebase:firebase-analytics:15.0.2'
+}
+//firebase conf(3
+apply plugin: 'com.google.gms.google-services'

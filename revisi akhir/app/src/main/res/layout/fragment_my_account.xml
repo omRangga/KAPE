@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize"
+    android:paddingBottom="50dp"
+    tools:context="com.unpas.chatak.MyAccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/profile_data_layout" />
+    </LinearLayout>
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="140dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <include layout="@layout/order_status_layout" />
+           <include layout="@layout/pesanan_terakhir_layout"/>
+           <include layout="@layout/alamat_layout"/>
+
+           <Button
+               android:id="@+id/sign_out_btn"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/margin_16dp"
+               android:layout_marginEnd="@dimen/margin_16dp"
+               android:layout_marginBottom="@dimen/margin_16dp"
+               android:backgroundTint="@color/merah_chatak"
+               android:text="Sign Out"
+               android:textColor="#ffffff"
+               android:textSize="14sp"
+               android:textStyle="bold" />
+       </LinearLayout>
+   </ScrollView>
+</FrameLayout>

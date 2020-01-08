@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FAFAFA</color>
+    <color name="colorPrimaryDark">#00000f</color>
+    <color name="colorAccent">@color/merah_chatak</color>
+    <color name="biru_chatak">#8BD5FE</color>
+    <color name="biru_tua">#077AE4</color>
+    <color name="ungu_chatak">#DF2986</color>
+    <color name="hitam_chatak">#000000</color>
+    <color name="merah_chatak">#F23333</color>
+    <color name="abu_chatak">#e5e5e5</color>
+    <color name="kuning_chatak">#fec516</color>
+    <color name="abu_alpha_chatak">#30303000</color>
+</resources>

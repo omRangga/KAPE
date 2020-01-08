@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".transaksi_page.MasukPesanan">
+
+    <!--header checkout-->
+    <LinearLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/header_checkout"
+            android:layout_width="@dimen/width_header_transaksi"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btBack"
+                android:layout_width="@dimen/text_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:contentDescription="@string/back_home"
+                app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header_masuk_pesanan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Checkout"
+            android:textColor="@color/hitam_chatak"
+            android:textSize="@dimen/text_size_20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!--jumlah pembayaran-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/abu_chatak">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Total Pembayaran" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Rp. 150000"
+            android:textColor="@color/kuning_chatak" />
+    </LinearLayout>
+
+    <!--Metode pembayaran-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:text="Metode Pembayaran"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/metode_pembayaran"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/abu_chatak">
+
+            <RadioButton
+                android:id="@+id/tf_virtual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/tf_virtual" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/abu_chatak">
+
+            <RadioButton
+                android:id="@+id/kredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/kartu_kredit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/abu_chatak">
+
+            <RadioButton
+                android:id="@+id/debit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kartu_debit"
+                android:checked="true"
+                android:paddingTop="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/abu_chatak">
+
+            <RadioButton
+                android:id="@+id/bayar_gerai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bayar_gerai"
+                android:paddingTop="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/abu_chatak">
+
+            <RadioButton
+                android:id="@+id/internet_banking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/internet_banking"
+                android:paddingTop="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/abu_chatak">
+
+            <RadioButton
+                android:id="@+id/uang_elektronik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/uang_elektronik"
+                android:paddingTop="5dp"
+                />
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bayar_sekarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline_btn"
+        android:backgroundTint="@color/ungu_chatak"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@color/colorPrimary"
+        android:text="BAYAR SEKARANG"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

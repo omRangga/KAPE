@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemKeranjang"
+        android:icon="@drawable/ic_action_cart"
+        android:visible="true"
+        android:title="@string/title_keranjang"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemNotif"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/notifikasi"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itemSetting"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/pengaturan"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itemHelp"
+        android:icon="@drawable/icon_help"
+        android:title="Bantuan"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itemAbout"
+        android:icon="@drawable/icon_info"
+        android:title="Tentang Chatak"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itemLogout"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:iconTint="#ffff"
+        android:title="Logout"
+        android:visible="true"
+        app:showAsAction="never" />
+</menu>
